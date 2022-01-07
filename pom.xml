@@ -12,7 +12,6 @@
         <module>core</module>
         <module>api</module>
         <module>mod-factions</module>
-        <module>core-implementation</module>
     </modules>
 
     <properties>

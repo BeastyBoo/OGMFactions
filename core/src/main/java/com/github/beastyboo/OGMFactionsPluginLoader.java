@@ -7,13 +7,13 @@ public class OGMFactionsPluginLoader extends JavaPlugin implements OGMFactionsPl
     private ModuleCentral central;
 
     @Override
-    public void onEnable() {
+    public synchronized void onEnable() {
         central = new ModuleCentral(this);
         central.launch();
     }
 
     @Override
-    public void onDisable() {
+    public synchronized void onDisable() {
         central.close();
         central = null;
     }
